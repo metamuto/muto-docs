@@ -1,0 +1,108 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #3F4552;
+  --ifm-color-primary-dark: #2C2E37;
+  --ifm-color-primary-darker: #141722;
+  --ifm-color-primary-darkest: #141722;
+  --ifm-color-primary-light: #8A8B90;
+  --ifm-color-primary-lighter: #BBBDC0;
+  --ifm-color-primary-lightest: #EEE9E2;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #FAFAFB;
+  --ifm-color-primary-dark: #3F4552;
+  --ifm-color-primary-darker: #2C2E37;
+  --ifm-color-primary-darkest: #181A1D;
+  --ifm-color-primary-light: #FAFAFB;
+  --ifm-color-primary-lighter: #A3A3A3;
+  --ifm-color-primary-lightest: #676B74;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+
+/*login-page*/
+html[data-theme='dark']::-webkit-scrollbar {background-color: #070829; width: 10px;}
+html[data-theme='dark']::-webkit-scrollbar-button { background-color: #070829; color: #F4F5FA ; }
+html[data-theme='dark']::-webkit-scrollbar-track  { background-color:#070829; }
+html[data-theme='dark']::-webkit-scrollbar-track-piece  { background-color: #070829}
+html[data-theme='dark']::-webkit-scrollbar-thumb  {  background:  #fff; }
+html[data-theme='dark']::-webkit-scrollbar-corner { background-color:#070829;  }
+html[data-theme='dark']::-webkit-resizer {background-color:#070829; }
+html[data-theme='dark']::-webkit-scrollbar-button:single-button {background-color: #070829;display: block;border-style: solid;height: 15px;width: 10px;}
+html[data-theme='dark']::-webkit-scrollbar-button:single-button:vertical:decrement {border-width: 0 5px 5px 5px;border-color: transparent transparent #fff transparent;}
+html[data-theme='dark']::-webkit-scrollbar-button:single-button:vertical:increment {border-width: 5px 5px 0 5px;border-color: #fff transparent transparent transparent;}
+html[data-theme='dark']{scrollbar-color: #fff #070829 !important; scrollbar-width: thin;}
+
+html[data-theme='light']::-webkit-scrollbar {background-color: #fff; width: 10px;}
+html[data-theme='light']::-webkit-scrollbar-button { background-color: #fff; color: #F4F5FA ; }
+html[data-theme='light']::-webkit-scrollbar-track  { background-color:#fff; }
+html[data-theme='light']::-webkit-scrollbar-track-piece  { background-color: #fff}
+html[data-theme='light']::-webkit-scrollbar-thumb  {  background:  #000; }
+html[data-theme='light']::-webkit-scrollbar-corner { background-color:#fff;  }
+html[data-theme='light']::-webkit-resizer {background-color:#fff; }
+html[data-theme='light']::-webkit-scrollbar-button:single-button {background-color: #fff;display: block;border-style: solid;height: 15px;width: 10px;}
+html[data-theme='light']::-webkit-scrollbar-button:single-button:vertical:decrement {border-width: 0 5px 5px 5px;border-color: transparent transparent #000 transparent;}
+html[data-theme='light']::-webkit-scrollbar-button:single-button:vertical:increment {border-width: 5px 5px 0 5px;border-color: #000 transparent transparent transparent;}
+html[data-theme='light']{scrollbar-color: #fff #fff !important; scrollbar-width: thin;}
+
+/*/*/*/****** new css ******/*/*/*/
+/**************** light mode *************************/
+/*body*/
+[data-theme='light'] .main-wrapper {background: #fff;color: #000;}
+[data-theme='light'] .main-wrapper p{color: #827297 !important;}
+[data-theme='light'] .box-links .inner {background: rgba(235, 235, 235, 0.3);  border: 2px solid rgba(0, 0, 0, 0.6);}
+[data-theme='light'] .box-links .inner:hover{background: rgba(235, 235, 235, 0.9);border: 2px solid rgba(0, 0, 0, 1) !important}
+[data-theme='light'] .arrow-img{fill: #000;opacity: 0.5 !important;}
+[data-theme='light'] .box-links .inner .arrow-img{fill: #000;opacity: 0.5 !important;}
+[data-theme='light'] .box-links .inner:hover .arrow-img {opacity: 1 !important;}
+[data-theme='light'] .grant-box .inner {background: rgba(235, 235, 235, 0.3);border: 2px solid rgba(0, 0, 0, 0.6);}
+[data-theme='light'] .grant-box .inner:hover{background: rgba(235, 235, 235, 0.9);border: 2px solid rgba(0, 0, 0, 1) !important}
+/*footer*/
+[data-theme='light'] .footer {border-top: 2px solid rgba(0, 0, 0, 0.5);background: #fff;padding: 40px 0px 40px;}
+/* [data-theme='light'] .footer .footer__bottom {padding: 40px 0px 0px;} */
+[data-theme='light'] .footer .footer__item a {color: #827297;}
+[data-theme='light'] .footer .footer__title, [data-theme='light'] .footer .footer__copyright{color: #000;}
+/**************** dark mode *************************/
+/*body*/
+[data-theme='dark'] .main-wrapper {background: #070829;color: #fff;}
+[data-theme='dark'] .main-wrapper p{color: #827297 !important;}
+[data-theme='dark'] .box-links .inner {background: rgba(45, 54, 100, 0.3);border: 2px solid rgba(83, 103, 199, 0.6);}
+[data-theme='dark'] .box-links .inner:hover{background: rgba(45, 54, 100, 0.6);border: 2px solid rgba(83, 103, 199, 1) !important}
+[data-theme='dark'] hr {background-color: #070829;}
+[data-theme='dark'] .arrow-img{fill: #fff;opacity: 0.5 !important;}
+[data-theme='dark'] .box-links .inner .arrow-img{fill: #fff;opacity: 0.5 !important;}
+[data-theme='dark'] .box-links .inner:hover .arrow-img {opacity: 1 !important;}
+[data-theme='dark'] .grant-box .inner {background: rgba(45, 54, 100, 0.3);border: 2px solid rgba(83, 103, 199, 0.6);}
+[data-theme='dark'] .grant-box .inner:hover{background: rgba(45, 54, 100, 0.6);border: 2px solid rgba(83, 103, 199, 1) !important}
+/*footer*/
+[data-theme='dark'] .footer {border-top: 2px solid hsla(0,0%,100%,.5);background: #070829;padding: 40px 0px 40px;}
+/* [data-theme='dark'] .footer .footer__bottom {padding: 40px 0px 0px;} */
+[data-theme='dark'] .footer .footer__item a {color: #827297}
+/**/
+.navbar__logo {height: 3rem;}
+.navbar--fixed-top  {padding: 16px;height: auto;}
+/*header*/
+[data-theme='dark'] .navbar--fixed-top {background: #2d3664;;color: #fff;}
+/*header*/
+[data-theme='light'] .navbar--fixed-top {background: rgba(235, 235, 235);color: #000;}
+/**/
+[data-theme='dark'] .codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {background: #0d153b !important;}
+[data-theme='light'] .codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {background: #ebebeb !important;}
+/**/
+[data-theme='dark'] .admonition_node_modules-\@docusaurus-theme-classic-lib-theme-Admonition-styles-module {background: #0d153b !important;border-left: 5px solid #5367c7;}
+[data-theme='light'] .admonition_node_modules-\@docusaurus-theme-classic-lib-theme-Admonition-styles-module {background: #ebebeb !important;border-left: 5px solid #000;}
+/**/
+[data-theme='dark'] .alert a {text-decoration-color: #5367c7;}
+[data-theme='light'] .alert a {text-decoration-color: #000;}
+/**/
+.logo-img{width: 200px;}
